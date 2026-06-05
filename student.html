@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Exercícios de Inglês</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal:#1B8C89; --teal-light:#E6F7F6; --teal-mid:#B2E4E2;
+    --yellow:#FFF5CC; --yellow-border:#FFD966; --orange:#FF8C42;
+    --bg:#F7FBFB; --card:#FFFFFF; --text:#1A2E2E; --muted:#6B8F8E;
+    --line:#C5E0DF; --radius:18px; --shadow:0 4px 20px rgba(27,140,137,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);font-family:'Nunito Sans',sans-serif;color:var(--text);min-height:100vh;padding:0 0 48px}
+
+  /* HERO */
+  .hero{background:linear-gradient(135deg,var(--teal) 0%,#0f6361 100%);padding:36px 24px 28px;text-align:center;position:relative;overflow:hidden}
+  .hero::before{content:'🎡';position:absolute;font-size:120px;opacity:.08;right:-10px;top:-20px}
+  .hero-label{font-family:'Nunito',sans-serif;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--teal-mid);margin-bottom:8px}
+  .hero-title{font-family:'Nunito',sans-serif;font-size:clamp(22px,6vw,30px);font-weight:900;color:#fff;line-height:1.2;margin-bottom:6px}
+  .hero-sub{font-size:14px;color:var(--teal-mid);font-weight:600}
+  .day-badge{display:inline-block;background:var(--orange);color:#fff;font-family:'Nunito',sans-serif;font-weight:800;font-size:13px;padding:4px 14px;border-radius:20px;margin-top:12px;letter-spacing:.5px}
+
+  /* AUDIO SPEED */
+  .speed-bar{display:flex;align-items:center;justify-content:center;gap:10px;margin:14px 16px 0;padding:10px 14px;background:var(--teal-light);border-radius:14px;font-weight:700;font-size:13px;color:var(--teal)}
+  .speed-toggle{display:flex;gap:6px}
+  .speed-btn{border:2px solid var(--teal-mid);background:#fff;color:var(--teal);border-radius:20px;padding:5px 14px;font-family:'Nunito',sans-serif;font-weight:800;font-size:13px;cursor:pointer}
+  .speed-btn.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+
+  /* CONTENT */
+  .content{padding:0 16px;margin-top:4px}
+  .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 20px 24px;margin-top:20px}
+  .card-teal{background:var(--teal-light)}
+  .card-yellow{background:var(--yellow);border:2px solid var(--yellow-border)}
+
+  .section-tag{display:inline-flex;align-items:center;gap:7px;font-family:'Nunito',sans-serif;font-weight:800;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal);background:var(--teal-mid);padding:4px 12px;border-radius:20px;margin-bottom:12px}
+  .section-num{width:26px;height:26px;background:var(--teal);color:#fff;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:'Nunito',sans-serif;font-weight:900;font-size:14px;flex-shrink:0}
+  .section-title{font-family:'Nunito',sans-serif;font-weight:900;font-size:clamp(17px,4.5vw,20px);color:var(--teal);display:flex;align-items:center;gap:10px;margin-bottom:6px}
+  .section-subtitle{font-size:13px;color:var(--muted);font-weight:600;margin-bottom:14px;padding-left:36px}
+
+  /* VOCAB */
+  .vocab-group{margin-bottom:18px}
+  .vocab-group:last-child{margin-bottom:0}
+  .vocab-group-title{font-family:'Nunito',sans-serif;font-weight:800;font-size:13px;color:var(--teal);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+  .vocab-item{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;border-radius:10px;margin-bottom:5px;background:rgba(255,255,255,.65);border-left:3px solid var(--teal-mid);gap:8px}
+  .vocab-left{display:flex;align-items:center;gap:8px;min-width:0}
+  .vocab-en{font-weight:700;font-size:16px;color:var(--text)}
+  .vocab-pt{font-size:13px;color:var(--muted);font-weight:600;text-align:right;flex-shrink:0}
+
+  .spk{border:none;background:var(--teal);color:#fff;width:34px;height:34px;border-radius:50%;font-size:15px;cursor:pointer;flex-shrink:0;display:inline-flex;align-items:center;justify-content:center}
+  .spk:active{transform:scale(.9)}
+
+  /* COPY WORDS */
+  .copy-row{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:6px;margin-bottom:10px;align-items:end}
+  .copy-word{font-weight:800;font-size:15px;color:var(--text);padding:8px 0 4px;border-bottom:2.5px solid var(--teal);display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+  .copy-num{color:var(--teal);font-size:13px}
+  .copy-blank{border:none;border-bottom:2px dashed var(--line);background:transparent;width:100%;padding:8px 4px 4px;font-family:'Nunito Sans',sans-serif;font-size:15px;color:var(--text);outline:none;-webkit-appearance:none;border-radius:0}
+  .copy-blank:focus{border-bottom-color:var(--teal)}
+
+  /* COMPLETE */
+  .sentence-row{margin-bottom:14px;padding:12px 14px;border-radius:12px;background:var(--teal-light);border-left:4px solid var(--teal)}
+  .sentence-row label{font-weight:800;color:var(--teal);font-size:14px;display:block;margin-bottom:6px}
+  .sentence-text{font-size:16px;font-weight:700;color:var(--text);line-height:1.6}
+  .sentence-hint{font-size:12px;color:var(--muted);font-weight:600;margin-top:6px}
+  input.fill{border:none;border-bottom:2px solid var(--teal);background:transparent;font-family:'Nunito Sans',sans-serif;font-size:16px;font-weight:700;color:var(--text);width:160px;padding:2px 4px;outline:none;-webkit-appearance:none;border-radius:0}
+  input.fill:focus{background:rgba(255,255,255,.6);border-radius:4px 4px 0 0}
+
+  /* WRITING */
+  .model-box{border-radius:12px;padding:12px 14px;margin-bottom:16px}
+  .model-label{font-size:12px;font-weight:800;color:#B8860B;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+  .model-text{font-size:16px;font-weight:700;color:var(--text)}
+  .example-label{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:#B8860B;margin-bottom:2px}
+  .example-text{font-size:16px;font-weight:700;font-style:italic;color:var(--text);display:flex;align-items:center;gap:8px}
+  .example-pt{font-size:13px;color:var(--muted)}
+  .write-num{font-weight:800;color:var(--teal);font-size:14px;margin-bottom:2px}
+  textarea.write-area{width:100%;border:none;border-bottom:2px dashed var(--line);background:transparent;font-family:'Nunito Sans',sans-serif;font-size:17px;color:var(--text);resize:none;outline:none;padding:8px 4px;margin-bottom:12px;min-height:44px;-webkit-appearance:none;border-radius:0;display:block}
+  textarea.write-area:focus{border-bottom-color:var(--teal);background:rgba(27,140,137,.04);border-radius:4px 4px 0 0}
+
+  /* SPEAKING */
+  .speaking-box{display:flex;align-items:flex-start;gap:14px}
+  .mic-icon{width:52px;height:52px;background:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0}
+  .speaking-text{font-size:16px;font-weight:600;line-height:1.5}
+  .speaking-cta{font-family:'Nunito',sans-serif;font-weight:800;color:var(--teal);font-size:15px;margin-top:4px}
+
+  /* MULTIPLE CHOICE */
+  .mc-item{margin-bottom:18px;padding:14px;border-radius:12px;background:var(--teal-light);border-left:4px solid var(--teal)}
+  .mc-prompt{font-weight:800;color:var(--text);font-size:15px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+  .mc-prompt .mc-num{color:var(--teal);font-size:14px}
+  .mc-prompt .mc-pt{color:var(--muted);font-weight:600;font-size:14px;font-style:italic}
+  .mc-options{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .mc-opt{border:2px solid var(--teal-mid);background:#fff;border-radius:12px;padding:12px 8px;font-weight:700;font-size:14px;color:var(--text);cursor:pointer;text-align:center;display:flex;align-items:center;justify-content:center;gap:6px;min-height:48px}
+  .mc-opt.chosen{background:var(--teal);color:#fff;border-color:var(--teal)}
+  .mc-opt .mini-spk{background:rgba(255,255,255,.85);color:var(--teal);width:24px;height:24px;border-radius:50%;font-size:11px;display:inline-flex;align-items:center;justify-content:center;border:none;cursor:pointer;flex-shrink:0}
+  .mc-opt.chosen .mini-spk{background:#fff;color:var(--teal)}
+
+  /* CHECKLIST */
+  .check-item{display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1.5px solid var(--teal-mid)}
+  .check-item:last-child{border-bottom:none}
+  .check-item input[type=checkbox]{width:28px;height:28px;accent-color:var(--teal);flex-shrink:0;cursor:pointer}
+  .check-item label{font-size:16px;font-weight:700;color:var(--text);cursor:pointer}
+
+  /* FOOTER */
+  .footer{text-align:center;margin:28px 16px 0;padding:22px;background:linear-gradient(135deg,var(--teal) 0%,#0f6361 100%);border-radius:var(--radius);color:#fff;font-family:'Nunito',sans-serif;font-weight:900;font-size:clamp(16px,4vw,20px)}
+
+  /* LOADING / ERROR */
+  .loading{padding:48px 24px;text-align:center;font-family:'Nunito',sans-serif;font-size:18px;color:var(--muted)}
+  .error-box{margin:24px 16px;padding:20px;background:#fff0f0;border:2px solid #ffb3b3;border-radius:var(--radius);font-weight:700;color:#c0392b}
+</style>
+</head>
+<body>
+
+<div id="app"><div class="loading">Carregando exercícios…</div></div>
+
+<script src="js/renderer.js"></script>
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var semana = (params.get('semana') || '01').padStart(2, '0');
+  var dia    = parseInt(params.get('dia') || '1', 10);
+
+  function _render(json) {
+    document.title = 'Inglês — Semana ' + semana + ' · Dia ' + dia;
+    document.getElementById('app').innerHTML = renderDay(json, dia);
+    _initAudio();
+    _initMultipleChoice();
+  }
+
+  fetch('data/semana' + semana + '.json')
+    .then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then(_render)
+    .catch(function (err) {
+      document.getElementById('app').innerHTML =
+        '<div class="error-box">Não foi possível carregar os exercícios.<br>' + err.message + '</div>';
+    });
+
+  // ── audio ────────────────────────────────────────────────────────────────
+  var speechRate = 1.0;
+  var enVoice    = null;
+
+  function _pickVoice() {
+    var voices = window.speechSynthesis ? speechSynthesis.getVoices() : [];
+    enVoice = voices.find(function (v) { return /en[-_]US/i.test(v.lang); }) ||
+              voices.find(function (v) { return /^en/i.test(v.lang); })    || null;
+  }
+  if (window.speechSynthesis) {
+    _pickVoice();
+    speechSynthesis.onvoiceschanged = _pickVoice;
+  }
+
+  function _speak(text) {
+    if (!window.speechSynthesis) { alert('Seu navegador não suporta áudio. Tente Chrome ou Safari.'); return; }
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = 'en-US';
+    u.rate = speechRate;
+    if (enVoice) u.voice = enVoice;
+    speechSynthesis.speak(u);
+  }
+
+  function _initAudio() {
+    document.querySelectorAll('.spk, .mini-spk').forEach(function (b) {
+      b.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        _speak(b.dataset.say);
+      });
+    });
+
+    var sn = document.getElementById('speedNormal');
+    var ss = document.getElementById('speedSlow');
+    if (sn) sn.addEventListener('click', function () {
+      speechRate = 1.0;
+      sn.classList.add('active');
+      ss.classList.remove('active');
+    });
+    if (ss) ss.addEventListener('click', function () {
+      speechRate = 0.6;
+      ss.classList.add('active');
+      sn.classList.remove('active');
+    });
+  }
+
+  // ── multiple choice ───────────────────────────────────────────────────────
+  function _initMultipleChoice() {
+    document.querySelectorAll('.mc-item').forEach(function (item) {
+      var opts = item.querySelectorAll('.mc-opt');
+      opts.forEach(function (opt) {
+        opt.addEventListener('click', function () {
+          opts.forEach(function (o) { o.classList.remove('chosen'); });
+          opt.classList.add('chosen');
+        });
+      });
+    });
+  }
+}());
+</script>
+</body>
+</html>

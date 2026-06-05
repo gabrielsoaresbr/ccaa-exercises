@@ -6,10 +6,16 @@ baseadas no tema semanal do CCAA. Sem backend: HTML/CSS/JS puro,
 JSON como fonte de dados, hospedado no GitHub Pages.
 
 ## Arquitetura
-- `admin.html` — eu preencho conteúdo da semana
 - `student.html?semana=XX&dia=N` — meu filho usa
-- `data/semanaXX.json` — base de dados de cada semana
+- `data/semanaXX.json` — base de dados de cada semana, gerado via chat com Claude usando o `prompt-mestre.md`
 - `js/renderer.js` — função única `renderDay(json, dayNumber)` que monta o HTML
+
+## Fluxo de geração de conteúdo
+1. Abrir nova conversa com Claude (claude.ai)
+2. Colar o conteúdo de `prompt-mestre.md` com as variáveis da semana preenchidas
+3. Claude gera o arquivo `semanaXX.json` completo (todos os 5 dias)
+4. Salvar o JSON em `data/semanaXX.json`
+5. Push para `main` → GitHub Pages serve automaticamente
 
 ## Regras pedagógicas (CRÍTICO)
 - Vocabulário restrito ao contexto: nunca introduzir palavras fora do JSON da semana
@@ -20,7 +26,6 @@ JSON como fonte de dados, hospedado no GitHub Pages.
 ## Stack
 - Vanilla JS (sem framework, sem build)
 - Web Speech API para áudio (en-US, com fallback)
-- localStorage no admin para rascunhos
 - Fonts: Nunito e Nunito Sans via Google Fonts
 
 ## Convenções

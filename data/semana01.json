@@ -1,0 +1,175 @@
+{
+  "week": 1,
+  "theme": "At the Amusement Park",
+  "themePt": "No parque de diversões",
+
+  "vocabulary": [
+    { "en": "haunted house",  "pt": "casa mal-assombrada" },
+    { "en": "roller coaster", "pt": "montanha-russa" },
+    { "en": "amusement park", "pt": "parque de diversões" },
+    { "en": "a big tent",     "pt": "uma barraca grande" },
+    { "en": "a small tent",   "pt": "uma barraca pequena" },
+    { "en": "carousel",       "pt": "carrossel" },
+    { "en": "ferris wheel",   "pt": "roda-gigante" },
+    { "en": "bumper car",     "pt": "carro bate-bate" }
+  ],
+
+  "verbs": [
+    { "en": "to be → am / is / are", "pt": "ser ou estar" }
+  ],
+
+  "dialogue_context_only": [
+    { "name": "Ashley",    "en": "Are you in line for the haunted house?",                  "pt": "Você está na fila da casa mal-assombrada?" },
+    { "name": "Devin",     "en": "No, we aren't. This is the line for the roller coaster.", "pt": "Não, não estamos. Esta é a fila da montanha-russa." },
+    { "name": "Jessica",   "en": "Wow! It's really big.",                                    "pt": "Uau! É bem grande." },
+    { "name": "Ryan",      "en": "Yeah.",                                                    "pt": "É." },
+    { "name": "Jessica",   "en": "Hey, Ashley. Let's ride the roller coaster.",              "pt": "Ei, Ashley. Vamos andar na montanha-russa." },
+    { "name": "Ashley",    "en": "No way!",                                                  "pt": "De jeito nenhum!" },
+    { "name": "Ryan",      "en": "Are you afraid of roller coasters?",                       "pt": "Você tem medo de montanha-russa?" },
+    { "name": "Ashley",    "en": "No, I'm not, Ryan. But I prefer haunted houses.",          "pt": "Não, não tenho, Ryan. Mas prefiro casas mal-assombradas." },
+    { "name": "Attendant", "en": "You're next, guys.",                                       "pt": "Vocês são os próximos, pessoal." },
+    { "name": "Devin",     "en": "Great!",                                                   "pt": "Ótimo!" }
+  ],
+
+  "days": [
+    {
+      "day": 1,
+      "weekday": "Segunda-feira",
+      "generated": true,
+      "copyWords": ["haunted house", "roller coaster", "carousel", "ferris wheel", "bumper car"],
+      "complete": [
+        { "before": "I am in the",           "after": ".",                          "hint": "parque de diversões",  "answer": "amusement park" },
+        { "before": "The",                   "after": "is big.",                    "hint": "montanha-russa",       "answer": "roller coaster" },
+        { "before": "This is a",             "after": ".",                          "hint": "barraca grande",       "answer": "big tent" },
+        { "before": "The",                   "after": "is in the amusement park.", "hint": "carrossel",            "answer": "carousel" },
+        { "before": "Are you afraid of the", "after": "?",                          "hint": "casa mal-assombrada",  "answer": "haunted house" },
+        { "before": "This is the",           "after": ".",                          "hint": "roda-gigante",         "answer": "ferris wheel" }
+      ],
+      "writing": {
+        "model": "I am in the + [lugar do parque]",
+        "example": { "en": "I am in the amusement park.", "pt": "Eu estou no parque de diversões." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "casa mal-assombrada", "options": ["haunted house", "carousel", "ferris wheel", "bumper car"],         "answer": "haunted house" },
+          { "prompt": "roda-gigante",        "options": ["ferris wheel", "amusement park", "a small tent", "bumper car"],    "answer": "ferris wheel" },
+          { "prompt": "carro bate-bate",     "options": ["bumper car", "roller coaster", "a big tent", "carousel"],          "answer": "bumper car" },
+          { "prompt": "barraca pequena",     "options": ["a small tent", "ferris wheel", "haunted house", "a big tent"],     "answer": "a small tent" }
+        ]
+      }
+    },
+
+    {
+      "day": 2,
+      "weekday": "Terça-feira",
+      "generated": true,
+      "copyWords": ["amusement park", "a big tent", "a small tent", "ferris wheel", "roller coaster"],
+      "complete": [
+        { "before": "This is a",        "after": ".", "hint": "barraca pequena",      "answer": "small tent" },
+        { "before": "The",              "after": "is big.", "hint": "roda-gigante",   "answer": "ferris wheel" },
+        { "before": "It is a",          "after": ".", "hint": "barraca grande",       "answer": "big tent" },
+        { "before": "Are you in the",   "after": "?", "hint": "parque de diversões",  "answer": "amusement park" },
+        { "before": "This is the",      "after": ".", "hint": "montanha-russa",       "answer": "roller coaster" },
+        { "before": "I am in the",      "after": ".", "hint": "carro bate-bate",      "answer": "bumper car" }
+      ],
+      "writing": {
+        "model": "This is a + [lugar do parque]",
+        "example": { "en": "This is a big tent.", "pt": "Esta é uma barraca grande." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "parque de diversões", "options": ["amusement park", "haunted house", "roller coaster", "carousel"],   "answer": "amusement park" },
+          { "prompt": "barraca grande",      "options": ["a big tent", "ferris wheel", "bumper car", "a small tent"],        "answer": "a big tent" },
+          { "prompt": "montanha-russa",      "options": ["roller coaster", "carousel", "haunted house", "ferris wheel"],     "answer": "roller coaster" },
+          { "prompt": "carrossel",           "options": ["carousel", "amusement park", "a big tent", "bumper car"],          "answer": "carousel" }
+        ]
+      }
+    },
+
+    {
+      "day": 3,
+      "weekday": "Quarta-feira",
+      "generated": true,
+      "copyWords": ["haunted house", "carousel", "bumper car", "ferris wheel", "amusement park"],
+      "complete": [
+        { "before": "The",            "after": "is big.",                    "hint": "carrossel",            "answer": "carousel" },
+        { "before": "I am in the",    "after": ".",                          "hint": "casa mal-assombrada",  "answer": "haunted house" },
+        { "before": "This is a",      "after": ".",                          "hint": "carro bate-bate",      "answer": "bumper car" },
+        { "before": "Are you in the", "after": "?",                          "hint": "roda-gigante",         "answer": "ferris wheel" },
+        { "before": "The",            "after": "is in the amusement park.", "hint": "casa mal-assombrada",   "answer": "haunted house" },
+        { "before": "It is a",        "after": ".",                          "hint": "carrossel",            "answer": "carousel" }
+      ],
+      "writing": {
+        "model": "The + [coisa] + is big",
+        "example": { "en": "The ferris wheel is big.", "pt": "A roda-gigante é grande." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "carrossel",           "options": ["carousel", "ferris wheel", "bumper car", "a big tent"],            "answer": "carousel" },
+          { "prompt": "parque de diversões", "options": ["amusement park", "haunted house", "a small tent", "roller coaster"], "answer": "amusement park" },
+          { "prompt": "casa mal-assombrada", "options": ["haunted house", "carousel", "bumper car", "roller coaster"],       "answer": "haunted house" },
+          { "prompt": "barraca grande",      "options": ["a big tent", "a small tent", "ferris wheel", "amusement park"],    "answer": "a big tent" }
+        ]
+      }
+    },
+
+    {
+      "day": 4,
+      "weekday": "Quinta-feira",
+      "generated": true,
+      "copyWords": ["roller coaster", "a small tent", "carousel", "bumper car", "a big tent"],
+      "complete": [
+        { "before": "Are you afraid of the", "after": "?", "hint": "montanha-russa",       "answer": "roller coaster" },
+        { "before": "I am afraid of the",    "after": ".", "hint": "casa mal-assombrada",  "answer": "haunted house" },
+        { "before": "Are you in a",          "after": "?", "hint": "barraca pequena",      "answer": "small tent" },
+        { "before": "This is the",           "after": ".", "hint": "carrossel",            "answer": "carousel" },
+        { "before": "The",                   "after": "is big.", "hint": "carro bate-bate", "answer": "bumper car" },
+        { "before": "I am in a",             "after": ".", "hint": "barraca grande",       "answer": "big tent" }
+      ],
+      "writing": {
+        "model": "I am afraid of the + [brinquedo]",
+        "example": { "en": "I am afraid of the haunted house.", "pt": "Eu tenho medo da casa mal-assombrada." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "barraca pequena", "options": ["a small tent", "ferris wheel", "haunted house", "a big tent"],         "answer": "a small tent" },
+          { "prompt": "carro bate-bate", "options": ["bumper car", "roller coaster", "a big tent", "carousel"],              "answer": "bumper car" },
+          { "prompt": "montanha-russa",  "options": ["roller coaster", "carousel", "haunted house", "ferris wheel"],         "answer": "roller coaster" },
+          { "prompt": "carrossel",       "options": ["carousel", "amusement park", "a big tent", "bumper car"],              "answer": "carousel" }
+        ]
+      }
+    },
+
+    {
+      "day": 5,
+      "weekday": "Sexta-feira",
+      "generated": true,
+      "copyWords": ["amusement park", "haunted house", "ferris wheel", "a small tent", "bumper car"],
+      "complete": [
+        { "before": "Let's ride the",     "after": ".", "hint": "montanha-russa",       "answer": "roller coaster" },
+        { "before": "This is the",        "after": ".", "hint": "parque de diversões",  "answer": "amusement park" },
+        { "before": "Let's ride the",     "after": ".", "hint": "roda-gigante",         "answer": "ferris wheel" },
+        { "before": "I am afraid of the", "after": ".", "hint": "carro bate-bate",      "answer": "bumper car" },
+        { "before": "It is a",            "after": ".", "hint": "barraca pequena",      "answer": "small tent" },
+        { "before": "The",                "after": "is big.", "hint": "casa mal-assombrada", "answer": "haunted house" }
+      ],
+      "writing": {
+        "model": "Let's ride the + [brinquedo]",
+        "example": { "en": "Let's ride the carousel.", "pt": "Vamos andar no carrossel." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "carro bate-bate",     "options": ["bumper car", "roller coaster", "carousel", "ferris wheel"],        "answer": "bumper car" },
+          { "prompt": "casa mal-assombrada", "options": ["haunted house", "ferris wheel", "amusement park", "carousel"],     "answer": "haunted house" },
+          { "prompt": "roda-gigante",        "options": ["ferris wheel", "bumper car", "a small tent", "roller coaster"],    "answer": "ferris wheel" },
+          { "prompt": "barraca pequena",     "options": ["a small tent", "a big tent", "carousel", "haunted house"],         "answer": "a small tent" }
+        ]
+      }
+    }
+  ]
+}
