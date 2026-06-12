@@ -1,0 +1,179 @@
+{
+  "week": 2,
+  "theme": "Lesson 9 — At the Baggage Claim Area",
+  "themePt": "Na área de retirada de bagagem",
+  "themeEmoji": "🧳",
+
+  "vocabulary": [
+    { "en": "suitcase",          "pt": "mala" },
+    { "en": "baggage",           "pt": "bagagem" },
+    { "en": "carousel",          "pt": "esteira de bagagem" },
+    { "en": "sticker",           "pt": "adesivo" },
+    { "en": "baggage claim area","pt": "área de retirada de bagagem" },
+    { "en": "black",             "pt": "preto" },
+    { "en": "blue",              "pt": "azul" },
+    { "en": "yellow",            "pt": "amarelo" },
+    { "en": "white",             "pt": "branco" },
+    { "en": "red",               "pt": "vermelho" }
+  ],
+
+  "verbs": [
+    { "en": "to be → am / is / are", "pt": "ser ou estar" },
+    { "en": "can / can't",           "pt": "poder / não poder (saber fazer)" }
+  ],
+
+  "dialogue_context_only": [
+    { "name": "Nicholas",    "en": "Hey, what color is your suitcase?",            "pt": "Ei, qual é a cor da sua mala?" },
+    { "name": "David",       "en": "It's black with a sticker of a dog on it.",   "pt": "É preta com um adesivo de cachorro." },
+    { "name": "Nicholas",    "en": "Look, David. It's on that carousel.",         "pt": "Olha, David. Está naquela esteira." },
+    { "name": "David",       "en": "Oh! It's too heavy.",                         "pt": "Ah! Está muito pesada." },
+    { "name": "David",       "en": "Can you lift it, Nicholas?",                  "pt": "Você consegue levantar, Nicholas?" },
+    { "name": "Nicholas",    "en": "No, I can't.",                                "pt": "Não, não consigo." },
+    { "name": "Mrs. Harris", "en": "I can help you.",                             "pt": "Eu posso ajudar vocês." },
+    { "name": "David",       "en": "Thanks, Mrs. Harris.",                        "pt": "Obrigado, Sra. Harris." },
+    { "name": "Nicholas",    "en": "Thanks, Grandma.",                            "pt": "Obrigado, vovó." },
+    { "name": "Mrs. Harris", "en": "You're welcome, guys.",                       "pt": "De nada, pessoal." }
+  ],
+
+  "days": [
+    {
+      "day": 1,
+      "weekday": "Segunda-feira",
+      "generated": true,
+      "copyWords": ["suitcase", "baggage", "carousel", "sticker", "black"],
+      "complete": [
+        { "before": "This",        "after": "suitcase is nice.",   "hint": "preto",                         "answer": "black" },
+        { "before": "The",         "after": "is on the carousel.", "hint": "mala",                          "answer": "suitcase" },
+        { "before": "It's",        "after": ".",                   "hint": "amarelo",                       "answer": "yellow" },
+        { "before": "My",          "after": "is heavy.",           "hint": "bagagem",                       "answer": "baggage" },
+        { "before": "This",        "after": "suitcase is nice.",   "hint": "vermelho",                      "answer": "red" },
+        { "before": "I am in the", "after": ".",                   "hint": "área de retirada de bagagem",   "answer": "baggage claim area" }
+      ],
+      "writing": {
+        "model": "This + [cor] + suitcase is nice.",
+        "example": { "en": "This blue suitcase is nice.", "pt": "Esta mala azul é bonita." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "mala",               "options": ["suitcase", "carousel", "sticker", "baggage"], "answer": "suitcase" },
+          { "prompt": "preto",              "options": ["black", "red", "white", "blue"],              "answer": "black" },
+          { "prompt": "esteira de bagagem", "options": ["carousel", "baggage", "suitcase", "sticker"], "answer": "carousel" },
+          { "prompt": "amarelo",            "options": ["yellow", "red", "black", "white"],            "answer": "yellow" }
+        ]
+      }
+    },
+
+    {
+      "day": 2,
+      "weekday": "Terça-feira",
+      "generated": true,
+      "copyWords": ["suitcase", "sticker", "white", "blue", "carousel"],
+      "complete": [
+        { "before": "This",          "after": "suitcase is nice.", "hint": "azul",     "answer": "blue" },
+        { "before": "The",           "after": "is black.",         "hint": "mala",     "answer": "suitcase" },
+        { "before": "It's",          "after": ".",                 "hint": "branco",   "answer": "white" },
+        { "before": "Look at that",  "after": ".",                 "hint": "esteira de bagagem", "answer": "carousel" },
+        { "before": "This",          "after": "is nice.",          "hint": "adesivo",  "answer": "sticker" },
+        { "before": "My",            "after": "is red.",           "hint": "bagagem",  "answer": "baggage" }
+      ],
+      "writing": {
+        "model": "It's + [cor].",
+        "example": { "en": "It's red.", "pt": "É vermelha." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "adesivo", "options": ["sticker", "suitcase", "baggage", "carousel"], "answer": "sticker" },
+          { "prompt": "branco",  "options": ["white", "yellow", "blue", "red"],             "answer": "white" },
+          { "prompt": "bagagem", "options": ["baggage", "sticker", "carousel", "suitcase"], "answer": "baggage" },
+          { "prompt": "azul",    "options": ["blue", "black", "white", "yellow"],           "answer": "blue" }
+        ]
+      }
+    },
+
+    {
+      "day": 3,
+      "weekday": "Quarta-feira",
+      "generated": true,
+      "copyWords": ["suitcase", "carousel", "red", "yellow", "baggage claim area"],
+      "complete": [
+        { "before": "This",        "after": "suitcase is nice.",     "hint": "branco",                       "answer": "white" },
+        { "before": "The",         "after": "is on that carousel.",  "hint": "mala",                          "answer": "suitcase" },
+        { "before": "It's",        "after": ".",                     "hint": "preto",                        "answer": "black" },
+        { "before": "This",        "after": "is cool.",              "hint": "adesivo",                      "answer": "sticker" },
+        { "before": "This",        "after": "suitcase is nice.",     "hint": "amarelo",                      "answer": "yellow" },
+        { "before": "Look at the", "after": ".",                     "hint": "esteira de bagagem",           "answer": "carousel" }
+      ],
+      "writing": {
+        "model": "The suitcase is + [cor].",
+        "example": { "en": "The suitcase is black.", "pt": "A mala é preta." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "esteira de bagagem",           "options": ["carousel", "baggage", "sticker", "suitcase"],                  "answer": "carousel" },
+          { "prompt": "vermelho",                     "options": ["red", "blue", "white", "black"],                               "answer": "red" },
+          { "prompt": "mala",                         "options": ["suitcase", "baggage", "carousel", "sticker"],                  "answer": "suitcase" },
+          { "prompt": "área de retirada de bagagem",  "options": ["baggage claim area", "carousel", "sticker", "baggage"],       "answer": "baggage claim area" }
+        ]
+      }
+    },
+
+    {
+      "day": 4,
+      "weekday": "Quinta-feira",
+      "generated": true,
+      "copyWords": ["baggage", "suitcase", "sticker", "yellow", "black"],
+      "complete": [
+        { "before": "This",        "after": "suitcase is nice.",    "hint": "vermelho",                      "answer": "red" },
+        { "before": "It's",        "after": ".",                    "hint": "azul",                         "answer": "blue" },
+        { "before": "The",         "after": "is yellow.",           "hint": "mala",                         "answer": "suitcase" },
+        { "before": "My",          "after": "is on the carousel.",  "hint": "bagagem",                      "answer": "baggage" },
+        { "before": "This",        "after": "is nice.",             "hint": "adesivo",                      "answer": "sticker" },
+        { "before": "I am in the", "after": ".",                    "hint": "área de retirada de bagagem",  "answer": "baggage claim area" }
+      ],
+      "writing": {
+        "model": "My baggage is + [cor].",
+        "example": { "en": "My baggage is blue.", "pt": "Minha bagagem é azul." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "amarelo", "options": ["yellow", "white", "red", "black"],            "answer": "yellow" },
+          { "prompt": "mala",    "options": ["suitcase", "sticker", "baggage", "carousel"], "answer": "suitcase" },
+          { "prompt": "preto",   "options": ["black", "blue", "yellow", "white"],           "answer": "black" },
+          { "prompt": "adesivo", "options": ["sticker", "carousel", "suitcase", "baggage"], "answer": "sticker" }
+        ]
+      }
+    },
+
+    {
+      "day": 5,
+      "weekday": "Sexta-feira",
+      "generated": true,
+      "copyWords": ["suitcase", "baggage", "carousel", "blue", "white"],
+      "complete": [
+        { "before": "This",        "after": "suitcase is nice.", "hint": "amarelo",            "answer": "yellow" },
+        { "before": "The",         "after": "is white.",         "hint": "mala",               "answer": "suitcase" },
+        { "before": "It's",        "after": ".",                 "hint": "vermelho",           "answer": "red" },
+        { "before": "Look at that","after": ".",                 "hint": "esteira de bagagem", "answer": "carousel" },
+        { "before": "This",        "after": "is black.",         "hint": "bagagem",            "answer": "baggage" },
+        { "before": "This",        "after": "is cool.",          "hint": "adesivo",            "answer": "sticker" }
+      ],
+      "writing": {
+        "model": "This + [cor] + suitcase is nice.",
+        "example": { "en": "This white suitcase is nice.", "pt": "Esta mala branca é bonita." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "azul",                        "options": ["blue", "red", "yellow", "black"],                        "answer": "blue" },
+          { "prompt": "bagagem",                     "options": ["baggage", "suitcase", "sticker", "carousel"],            "answer": "baggage" },
+          { "prompt": "branco",                      "options": ["white", "black", "red", "yellow"],                       "answer": "white" },
+          { "prompt": "área de retirada de bagagem", "options": ["baggage claim area", "carousel", "baggage", "sticker"],  "answer": "baggage claim area" }
+        ]
+      }
+    }
+  ]
+}
