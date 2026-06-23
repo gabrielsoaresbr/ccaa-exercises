@@ -1,0 +1,178 @@
+{
+  "week": 3,
+  "theme": "Lesson 10 — At the Zoo",
+  "themePt": "No zoológico",
+  "themeEmoji": "🦩",
+
+  "vocabulary": [
+    { "en": "zoo",       "pt": "zoológico" },
+    { "en": "sea lion",  "pt": "leão-marinho" },
+    { "en": "flamingo",  "pt": "flamingo" },
+    { "en": "birds",     "pt": "pássaros" },
+    { "en": "show",      "pt": "espetáculo (show)" },
+    { "en": "jacket",    "pt": "jaqueta" },
+    { "en": "pink",      "pt": "rosa" },
+    { "en": "brown",     "pt": "marrom" },
+    { "en": "orange",    "pt": "laranja" },
+    { "en": "green",     "pt": "verde" }
+  ],
+
+  "verbs": [
+    { "en": "to be → am / is / are", "pt": "ser ou estar" },
+    { "en": "can",                   "pt": "poder / conseguir" }
+  ],
+
+  "dialogue_context_only": [
+    { "name": "Sophia",    "en": "Is the next sea lion show at a quarter to five?", "pt": "O próximo show do leão-marinho é quinze para as cinco?" },
+    { "name": "Maria",     "en": "No, it's at a quarter after five.",               "pt": "Não, é às cinco e quinze." },
+    { "name": "Sophia",    "en": "And what time is it now, Maria?",                 "pt": "E que horas são agora, Maria?" },
+    { "name": "Maria",     "en": "It's four-thirty.",                              "pt": "São quatro e meia." },
+    { "name": "Julia",     "en": "We can walk around the zoo before the show.",    "pt": "Podemos passear pelo zoológico antes do show." },
+    { "name": "Sophia",    "en": "Those pink birds are really beautiful, Julia.",  "pt": "Aqueles pássaros rosa são muito lindos, Julia." },
+    { "name": "Julia",     "en": "Yeah, they're flamingos.",                       "pt": "É, são flamingos." },
+    { "name": "Mr. Scott", "en": "Come on, guys. The show is about to begin.",     "pt": "Vamos, pessoal. O show está prestes a começar." },
+    { "name": "Maria",     "en": "OK, Mr. Scott.",                                 "pt": "Está bem, Sr. Scott." }
+  ],
+
+  "days": [
+    {
+      "day": 1,
+      "weekday": "Segunda-feira",
+      "generated": true,
+      "copyWords": ["zoo", "sea lion", "flamingo", "jacket", "show"],
+      "complete": [
+        { "before": "That",                "after": "jacket is cool.",       "hint": "rosa",          "answer": "pink" },
+        { "before": "We can walk around the", "after": ".",                  "hint": "zoológico",     "answer": "zoo" },
+        { "before": "The",                 "after": "show is at a quarter after five.", "hint": "leão-marinho", "answer": "sea lion" },
+        { "before": "Those",               "after": "are beautiful.",        "hint": "pássaros",      "answer": "birds" },
+        { "before": "That is a",           "after": ".",                     "hint": "flamingo",      "answer": "flamingo" },
+        { "before": "That",                "after": "jacket is cool.",       "hint": "verde",         "answer": "green" }
+      ],
+      "writing": {
+        "model": "That + [cor] + jacket is cool.",
+        "example": { "en": "That brown jacket is cool.", "pt": "Aquela jaqueta marrom é legal." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "leão-marinho", "options": ["sea lion", "flamingo", "zoo", "jacket"],  "answer": "sea lion" },
+          { "prompt": "rosa",         "options": ["pink", "brown", "green", "orange"],        "answer": "pink" },
+          { "prompt": "pássaros",     "options": ["birds", "flamingo", "show", "zoo"],        "answer": "birds" },
+          { "prompt": "zoológico",    "options": ["zoo", "show", "jacket", "sea lion"],       "answer": "zoo" }
+        ]
+      }
+    },
+
+    {
+      "day": 2,
+      "weekday": "Terça-feira",
+      "generated": true,
+      "copyWords": ["zoo", "jacket", "show", "pink", "brown"],
+      "complete": [
+        { "before": "That",          "after": "jacket is cool.",            "hint": "marrom",      "answer": "brown" },
+        { "before": "The sea lion",  "after": "is at four-thirty.",         "hint": "espetáculo",  "answer": "show" },
+        { "before": "Those birds are","after": ".",                         "hint": "rosa",        "answer": "pink" },
+        { "before": "That",          "after": "jacket is cool.",            "hint": "laranja",     "answer": "orange" },
+        { "before": "Is that a",     "after": "?",                          "hint": "flamingo",    "answer": "flamingo" },
+        { "before": "Those",         "after": "are really beautiful.",      "hint": "pássaros",    "answer": "birds" }
+      ],
+      "writing": {
+        "model": "Those + [animais] + are beautiful.",
+        "example": { "en": "Those birds are beautiful.", "pt": "Aqueles pássaros são lindos." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "jaqueta",          "options": ["jacket", "show", "zoo", "flamingo"],    "answer": "jacket" },
+          { "prompt": "marrom",           "options": ["brown", "pink", "green", "orange"],      "answer": "brown" },
+          { "prompt": "espetáculo (show)","options": ["show", "zoo", "jacket", "sea lion"],     "answer": "show" },
+          { "prompt": "laranja",          "options": ["orange", "green", "brown", "pink"],      "answer": "orange" }
+        ]
+      }
+    },
+
+    {
+      "day": 3,
+      "weekday": "Quarta-feira",
+      "generated": true,
+      "copyWords": ["sea lion", "flamingo", "birds", "green", "orange"],
+      "complete": [
+        { "before": "That",          "after": "coat is cool.",         "hint": "verde",                 "answer": "green" },
+        { "before": "It's a quarter","after": "seven.",                "hint": "e quinze (depois)",     "answer": "after" },
+        { "before": "The show is at a quarter", "after": "five.",      "hint": "para",                  "answer": "to" },
+        { "before": "We can walk around the",   "after": "before the show.", "hint": "zoológico",       "answer": "zoo" },
+        { "before": "That",          "after": "coat is cool.",         "hint": "laranja",               "answer": "orange" },
+        { "before": "That is a pink","after": ".",                     "hint": "flamingo",              "answer": "flamingo" }
+      ],
+      "writing": {
+        "model": "It's + [horário].",
+        "example": { "en": "It's four-thirty.", "pt": "São quatro e meia." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "flamingo",          "options": ["flamingo", "birds", "sea lion", "zoo"], "answer": "flamingo" },
+          { "prompt": "verde",             "options": ["green", "orange", "pink", "brown"],      "answer": "green" },
+          { "prompt": "(quinze) para → a quarter ___ five", "options": ["to", "after", "at", "before"], "answer": "to" },
+          { "prompt": "e quinze (depois) → a quarter ___ seven", "options": ["after", "to", "at", "before"], "answer": "after" }
+        ]
+      }
+    },
+
+    {
+      "day": 4,
+      "weekday": "Quinta-feira",
+      "generated": true,
+      "copyWords": ["zoo", "sea lion", "show", "brown", "pink"],
+      "complete": [
+        { "before": "That",        "after": "coat is cool.",            "hint": "rosa",         "answer": "pink" },
+        { "before": "The",         "after": "show is at a quarter to five.", "hint": "leão-marinho", "answer": "sea lion" },
+        { "before": "Those birds are","after": ".",                     "hint": "marrom",       "answer": "brown" },
+        { "before": "Is that an",  "after": "jacket?",                  "hint": "laranja",      "answer": "orange" },
+        { "before": "I am at the", "after": ".",                        "hint": "zoológico",    "answer": "zoo" },
+        { "before": "Those pink",  "after": "are beautiful.",           "hint": "pássaros",     "answer": "birds" }
+      ],
+      "writing": {
+        "model": "The sea lion show is at + [horário].",
+        "example": { "en": "The sea lion show is at four-thirty.", "pt": "O show dos leões-marinhos é às quatro e meia." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "leão-marinho", "options": ["sea lion", "flamingo", "zoo", "show"],  "answer": "sea lion" },
+          { "prompt": "rosa",         "options": ["pink", "green", "brown", "orange"],      "answer": "pink" },
+          { "prompt": "zoológico",    "options": ["zoo", "sea lion", "show", "birds"],      "answer": "zoo" },
+          { "prompt": "pássaros",     "options": ["birds", "flamingo", "jacket", "show"],   "answer": "birds" }
+        ]
+      }
+    },
+
+    {
+      "day": 5,
+      "weekday": "Sexta-feira",
+      "generated": true,
+      "copyWords": ["flamingo", "jacket", "green", "orange", "show"],
+      "complete": [
+        { "before": "That is an",   "after": "jacket.",                  "hint": "laranja",      "answer": "orange" },
+        { "before": "The sea lion", "after": "is at seven-thirty.",      "hint": "espetáculo",   "answer": "show" },
+        { "before": "That",         "after": "coat is cool.",            "hint": "marrom",       "answer": "brown" },
+        { "before": "It's a",       "after": ".",                        "hint": "flamingo",     "answer": "flamingo" },
+        { "before": "We can walk around the", "after": "now.",           "hint": "zoológico",    "answer": "zoo" },
+        { "before": "Is that a",    "after": "jacket?",                  "hint": "verde",        "answer": "green" }
+      ],
+      "writing": {
+        "model": "Those + [cor] + birds are beautiful.",
+        "example": { "en": "Those pink birds are beautiful.", "pt": "Aqueles pássaros rosa são lindos." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "flamingo",          "options": ["flamingo", "sea lion", "birds", "zoo"], "answer": "flamingo" },
+          { "prompt": "laranja",           "options": ["orange", "pink", "green", "brown"],      "answer": "orange" },
+          { "prompt": "verde",             "options": ["green", "brown", "pink", "orange"],      "answer": "green" },
+          { "prompt": "espetáculo (show)", "options": ["show", "zoo", "jacket", "sea lion"],     "answer": "show" }
+        ]
+      }
+    }
+  ]
+}
