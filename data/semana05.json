@@ -1,0 +1,175 @@
+{
+  "week": 5,
+  "theme": "Revisão 2 — Parque, Bagagem & Zoo",
+  "themePt": "Revisão geral: parque de diversões, bagagem e zoológico",
+  "themeEmoji": "🎢",
+
+  "vocabulary": [
+    { "en": "bumper car",   "pt": "carro bate-bate" },
+    { "en": "a big tent",   "pt": "uma barraca grande" },
+    { "en": "a small tent", "pt": "uma barraca pequena" },
+    { "en": "suitcase",     "pt": "mala" },
+    { "en": "carousel",     "pt": "carrossel / esteira" },
+    { "en": "baggage",      "pt": "bagagem" },
+    { "en": "sticker",      "pt": "adesivo" },
+    { "en": "show",         "pt": "espetáculo (show)" },
+    { "en": "jacket",       "pt": "jaqueta" },
+    { "en": "birds",        "pt": "pássaros" },
+    { "en": "yellow",       "pt": "amarelo" },
+    { "en": "white",        "pt": "branco" },
+    { "en": "green",        "pt": "verde" },
+    { "en": "brown",        "pt": "marrom" },
+    { "en": "orange",       "pt": "laranja" }
+  ],
+
+  "verbs": [
+    { "en": "to be → am / is / are", "pt": "ser ou estar" },
+    { "en": "can / can't",           "pt": "poder / não poder (conseguir)" }
+  ],
+
+  "dialogue_context_only": [
+    { "name": "Revisão", "en": "This is a review of Amusement Park, Lesson 9 and Lesson 10.", "pt": "Esta é uma revisão do Parque de Diversões, Lição 9 e Lição 10." }
+  ],
+
+  "days": [
+    {
+      "day": 1,
+      "weekday": "Segunda-feira",
+      "generated": true,
+      "copyWords": ["bumper car", "suitcase", "carousel", "jacket", "show"],
+      "complete": [
+        { "before": "This is a",   "after": ".",                        "hint": "carro bate-bate", "answer": "bumper car" },
+        { "before": "That",        "after": "jacket is cool.",          "hint": "amarelo",         "answer": "yellow" },
+        { "before": "The",         "after": "is on the carousel.",      "hint": "mala",            "answer": "suitcase" },
+        { "before": "Those",       "after": "are beautiful.",           "hint": "pássaros",        "answer": "birds" },
+        { "before": "My",          "after": "is heavy.",                "hint": "bagagem",         "answer": "baggage" },
+        { "before": "The sea lion","after": "is at four-thirty.",       "hint": "espetáculo",      "answer": "show" }
+      ],
+      "writing": {
+        "model": "That + [cor] + jacket is cool.",
+        "example": { "en": "That green jacket is cool.", "pt": "Aquela jaqueta verde é legal." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "carro bate-bate", "options": ["bumper car", "carousel", "suitcase", "jacket"], "answer": "bumper car" },
+          { "prompt": "amarelo",         "options": ["yellow", "white", "green", "brown"],            "answer": "yellow" },
+          { "prompt": "mala",            "options": ["suitcase", "baggage", "sticker", "show"],       "answer": "suitcase" },
+          { "prompt": "pássaros",        "options": ["birds", "jacket", "show", "carousel"],          "answer": "birds" }
+        ]
+      }
+    },
+
+    {
+      "day": 2,
+      "weekday": "Terça-feira",
+      "generated": true,
+      "copyWords": ["a big tent", "baggage", "sticker", "birds", "jacket"],
+      "complete": [
+        { "before": "This is",     "after": ".",                "hint": "barraca grande", "answer": "a big tent" },
+        { "before": "That",        "after": "jacket is cool.",  "hint": "verde",          "answer": "green" },
+        { "before": "This is a",   "after": ".",                "hint": "adesivo",        "answer": "sticker" },
+        { "before": "Those birds are","after": ".",             "hint": "branco",         "answer": "white" },
+        { "before": "Can you lift the","after": "?",            "hint": "bagagem",        "answer": "baggage" },
+        { "before": "Look at that","after": ".",                "hint": "esteira",        "answer": "carousel" }
+      ],
+      "writing": {
+        "model": "Those + [cor] + birds are beautiful.",
+        "example": { "en": "Those white birds are beautiful.", "pt": "Aqueles pássaros brancos são lindos." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "barraca grande", "options": ["a big tent", "a small tent", "bumper car", "carousel"], "answer": "a big tent" },
+          { "prompt": "verde",          "options": ["green", "yellow", "white", "brown"],                    "answer": "green" },
+          { "prompt": "bagagem",        "options": ["baggage", "suitcase", "sticker", "show"],               "answer": "baggage" },
+          { "prompt": "jaqueta",        "options": ["jacket", "show", "birds", "carousel"],                  "answer": "jacket" }
+        ]
+      }
+    },
+
+    {
+      "day": 3,
+      "weekday": "Quarta-feira",
+      "generated": true,
+      "copyWords": ["a small tent", "suitcase", "carousel", "show", "birds"],
+      "complete": [
+        { "before": "This is",     "after": ".",                             "hint": "barraca pequena", "answer": "a small tent" },
+        { "before": "That",        "after": "jacket is cool.",               "hint": "marrom",          "answer": "brown" },
+        { "before": "This",        "after": "suitcase is nice.",             "hint": "branco",          "answer": "white" },
+        { "before": "No, I",       "after": ".",                             "hint": "não consigo",     "answer": "can't" },
+        { "before": "The sea lion","after": "is at a quarter after five.",   "hint": "espetáculo",      "answer": "show" },
+        { "before": "Those brown", "after": "are beautiful.",                "hint": "pássaros",        "answer": "birds" }
+      ],
+      "writing": {
+        "model": "Can you lift the + [objeto]?",
+        "example": { "en": "Can you lift the baggage?", "pt": "Você consegue levantar a bagagem?" }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "barraca pequena",   "options": ["a small tent", "a big tent", "bumper car", "suitcase"], "answer": "a small tent" },
+          { "prompt": "marrom",            "options": ["brown", "green", "yellow", "orange"],                   "answer": "brown" },
+          { "prompt": "(eu) não consigo",  "options": ["can't", "can", "lift", "help"],                        "answer": "can't" },
+          { "prompt": "espetáculo (show)", "options": ["show", "jacket", "birds", "carousel"],                 "answer": "show" }
+        ]
+      }
+    },
+
+    {
+      "day": 4,
+      "weekday": "Quinta-feira",
+      "generated": true,
+      "copyWords": ["bumper car", "baggage", "sticker", "jacket", "carousel"],
+      "complete": [
+        { "before": "That",        "after": "jacket is cool.",   "hint": "laranja",       "answer": "orange" },
+        { "before": "Look at the", "after": ".",                 "hint": "adesivo",       "answer": "sticker" },
+        { "before": "Can you lift the","after": "?",             "hint": "mala",          "answer": "suitcase" },
+        { "before": "Those birds are","after": ".",              "hint": "verde",         "answer": "green" },
+        { "before": "Look at the", "after": ".",                 "hint": "carro bate-bate","answer": "bumper car" },
+        { "before": "My",          "after": "is on the carousel.","hint": "bagagem",      "answer": "baggage" }
+      ],
+      "writing": {
+        "model": "This + [cor] + suitcase is nice.",
+        "example": { "en": "This white suitcase is nice.", "pt": "Esta mala branca é bonita." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "carro bate-bate",     "options": ["bumper car", "a big tent", "a small tent", "carousel"], "answer": "bumper car" },
+          { "prompt": "laranja",             "options": ["orange", "brown", "green", "yellow"],                   "answer": "orange" },
+          { "prompt": "adesivo",             "options": ["sticker", "baggage", "suitcase", "jacket"],             "answer": "sticker" },
+          { "prompt": "carrossel / esteira", "options": ["carousel", "suitcase", "bumper car", "show"],           "answer": "carousel" }
+        ]
+      }
+    },
+
+    {
+      "day": 5,
+      "weekday": "Sexta-feira",
+      "generated": true,
+      "copyWords": ["a big tent", "a small tent", "suitcase", "birds", "show"],
+      "complete": [
+        { "before": "This",           "after": "suitcase is nice.", "hint": "amarelo",         "answer": "yellow" },
+        { "before": "Is this",        "after": "?",                 "hint": "barraca grande",  "answer": "a big tent" },
+        { "before": "Those green",    "after": "are beautiful.",    "hint": "pássaros",        "answer": "birds" },
+        { "before": "The",            "after": "is about to begin.","hint": "espetáculo",      "answer": "show" },
+        { "before": "Is this",        "after": "?",                 "hint": "barraca pequena", "answer": "a small tent" },
+        { "before": "Look at those",  "after": ".",                 "hint": "pássaros",        "answer": "birds" }
+      ],
+      "writing": {
+        "model": "It's + [cor].",
+        "example": { "en": "It's orange.", "pt": "É laranja." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "amarelo",         "options": ["yellow", "green", "brown", "orange"],                 "answer": "yellow" },
+          { "prompt": "barraca grande",  "options": ["a big tent", "a small tent", "bumper car", "carousel"],"answer": "a big tent" },
+          { "prompt": "barraca pequena", "options": ["a small tent", "a big tent", "suitcase", "sticker"],   "answer": "a small tent" },
+          { "prompt": "branco",          "options": ["white", "yellow", "green", "brown"],                   "answer": "white" }
+        ]
+      }
+    }
+  ]
+}

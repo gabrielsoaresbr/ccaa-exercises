@@ -1,0 +1,176 @@
+{
+  "week": 4,
+  "theme": "Revisão 1 — Parque, Bagagem & Zoo",
+  "themePt": "Revisão geral: parque de diversões, bagagem e zoológico",
+  "themeEmoji": "🎡",
+
+  "vocabulary": [
+    { "en": "haunted house",     "pt": "casa mal-assombrada" },
+    { "en": "roller coaster",    "pt": "montanha-russa" },
+    { "en": "amusement park",    "pt": "parque de diversões" },
+    { "en": "carousel",          "pt": "carrossel / esteira" },
+    { "en": "ferris wheel",      "pt": "roda-gigante" },
+    { "en": "suitcase",          "pt": "mala" },
+    { "en": "baggage",           "pt": "bagagem" },
+    { "en": "sticker",           "pt": "adesivo" },
+    { "en": "baggage claim area","pt": "área de retirada de bagagem" },
+    { "en": "zoo",               "pt": "zoológico" },
+    { "en": "sea lion",          "pt": "leão-marinho" },
+    { "en": "flamingo",          "pt": "flamingo" },
+    { "en": "red",               "pt": "vermelho" },
+    { "en": "blue",              "pt": "azul" },
+    { "en": "black",             "pt": "preto" },
+    { "en": "pink",              "pt": "rosa" }
+  ],
+
+  "verbs": [
+    { "en": "to be → am / is / are", "pt": "ser ou estar" },
+    { "en": "can / can't",           "pt": "poder / não poder (conseguir)" }
+  ],
+
+  "dialogue_context_only": [
+    { "name": "Revisão", "en": "This is a review of Amusement Park, Lesson 9 and Lesson 10.", "pt": "Esta é uma revisão do Parque de Diversões, Lição 9 e Lição 10." }
+  ],
+
+  "days": [
+    {
+      "day": 1,
+      "weekday": "Segunda-feira",
+      "generated": true,
+      "copyWords": ["roller coaster", "carousel", "suitcase", "zoo", "flamingo"],
+      "complete": [
+        { "before": "The",                    "after": "is big.",         "hint": "montanha-russa",     "answer": "roller coaster" },
+        { "before": "This",                   "after": "suitcase is nice.","hint": "vermelho",          "answer": "red" },
+        { "before": "We can walk around the", "after": ".",               "hint": "zoológico",          "answer": "zoo" },
+        { "before": "My",                     "after": "is heavy.",       "hint": "bagagem",            "answer": "baggage" },
+        { "before": "That is a",              "after": ".",               "hint": "flamingo",           "answer": "flamingo" },
+        { "before": "Are you afraid of the",  "after": "?",               "hint": "casa mal-assombrada","answer": "haunted house" }
+      ],
+      "writing": {
+        "model": "This + [cor] + suitcase is nice.",
+        "example": { "en": "This blue suitcase is nice.", "pt": "Esta mala azul é bonita." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "montanha-russa", "options": ["roller coaster", "carousel", "ferris wheel", "zoo"],  "answer": "roller coaster" },
+          { "prompt": "mala",           "options": ["suitcase", "baggage", "sticker", "flamingo"],          "answer": "suitcase" },
+          { "prompt": "vermelho",       "options": ["red", "blue", "black", "pink"],                        "answer": "red" },
+          { "prompt": "leão-marinho",   "options": ["sea lion", "flamingo", "zoo", "carousel"],             "answer": "sea lion" }
+        ]
+      }
+    },
+
+    {
+      "day": 2,
+      "weekday": "Terça-feira",
+      "generated": true,
+      "copyWords": ["ferris wheel", "baggage", "sticker", "sea lion", "amusement park"],
+      "complete": [
+        { "before": "This is a", "after": ".",                             "hint": "adesivo",            "answer": "sticker" },
+        { "before": "The",       "after": "is nice.",                      "hint": "carrossel",          "answer": "carousel" },
+        { "before": "This",      "after": "suitcase is nice.",             "hint": "azul",               "answer": "blue" },
+        { "before": "I am in the","after": ".",                            "hint": "parque de diversões","answer": "amusement park" },
+        { "before": "Can you lift the", "after": "?",                      "hint": "mala",               "answer": "suitcase" },
+        { "before": "The",       "after": "show is at a quarter after five.","hint": "leão-marinho",     "answer": "sea lion" }
+      ],
+      "writing": {
+        "model": "I am in the + [lugar].",
+        "example": { "en": "I am in the amusement park.", "pt": "Eu estou no parque de diversões." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "roda-gigante", "options": ["ferris wheel", "roller coaster", "carousel", "zoo"], "answer": "ferris wheel" },
+          { "prompt": "adesivo",      "options": ["sticker", "suitcase", "baggage", "flamingo"],        "answer": "sticker" },
+          { "prompt": "azul",         "options": ["blue", "red", "black", "pink"],                      "answer": "blue" },
+          { "prompt": "bagagem",      "options": ["baggage", "suitcase", "sticker", "zoo"],             "answer": "baggage" }
+        ]
+      }
+    },
+
+    {
+      "day": 3,
+      "weekday": "Quarta-feira",
+      "generated": true,
+      "copyWords": ["haunted house", "carousel", "suitcase", "baggage claim area", "flamingo"],
+      "complete": [
+        { "before": "This is a",   "after": ".",                 "hint": "casa mal-assombrada",         "answer": "haunted house" },
+        { "before": "The",         "after": "is on the carousel.","hint": "mala",                        "answer": "suitcase" },
+        { "before": "No, I",       "after": ".",                 "hint": "não consigo",                 "answer": "can't" },
+        { "before": "The flamingo is","after": ".",              "hint": "rosa",                        "answer": "pink" },
+        { "before": "I am in the", "after": ".",                 "hint": "área de retirada de bagagem", "answer": "baggage claim area" },
+        { "before": "Look at the", "after": ".",                 "hint": "roda-gigante",                "answer": "ferris wheel" }
+      ],
+      "writing": {
+        "model": "Can you lift the + [objeto]?",
+        "example": { "en": "Can you lift the suitcase?", "pt": "Você consegue levantar a mala?" }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "carrossel / esteira", "options": ["carousel", "ferris wheel", "roller coaster", "zoo"], "answer": "carousel" },
+          { "prompt": "casa mal-assombrada", "options": ["haunted house", "amusement park", "ferris wheel", "carousel"], "answer": "haunted house" },
+          { "prompt": "rosa",                "options": ["pink", "red", "blue", "black"],                     "answer": "pink" },
+          { "prompt": "(eu) não consigo",    "options": ["can't", "can", "lift", "help"],                    "answer": "can't" }
+        ]
+      }
+    },
+
+    {
+      "day": 4,
+      "weekday": "Quinta-feira",
+      "generated": true,
+      "copyWords": ["roller coaster", "amusement park", "baggage", "zoo", "sea lion"],
+      "complete": [
+        { "before": "This",        "after": "suitcase is nice.",          "hint": "preto",        "answer": "black" },
+        { "before": "I am at the", "after": ".",                          "hint": "zoológico",    "answer": "zoo" },
+        { "before": "The",         "after": "show is at four-thirty.",    "hint": "leão-marinho", "answer": "sea lion" },
+        { "before": "Is that a",   "after": "suitcase?",                  "hint": "vermelho",     "answer": "red" },
+        { "before": "This is the", "after": ".",                          "hint": "montanha-russa","answer": "roller coaster" },
+        { "before": "Can you lift the", "after": "?",                     "hint": "bagagem",      "answer": "baggage" }
+      ],
+      "writing": {
+        "model": "It's + [horário].",
+        "example": { "en": "It's four-thirty.", "pt": "São quatro e meia." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "parque de diversões",         "options": ["amusement park", "haunted house", "zoo", "carousel"], "answer": "amusement park" },
+          { "prompt": "preto",                       "options": ["black", "red", "blue", "pink"],                       "answer": "black" },
+          { "prompt": "zoológico",                   "options": ["zoo", "sea lion", "flamingo", "baggage"],             "answer": "zoo" },
+          { "prompt": "área de retirada de bagagem", "options": ["baggage claim area", "carousel", "zoo", "sticker"],   "answer": "baggage claim area" }
+        ]
+      }
+    },
+
+    {
+      "day": 5,
+      "weekday": "Sexta-feira",
+      "generated": true,
+      "copyWords": ["ferris wheel", "suitcase", "sticker", "flamingo", "baggage"],
+      "complete": [
+        { "before": "It's",         "after": ".",                  "hint": "vermelho",  "answer": "red" },
+        { "before": "Look at the",  "after": ".",                  "hint": "adesivo",   "answer": "sticker" },
+        { "before": "Is that a",    "after": "suitcase?",          "hint": "azul",      "answer": "blue" },
+        { "before": "That is a pink","after": ".",                 "hint": "flamingo",  "answer": "flamingo" },
+        { "before": "My",           "after": "is on the carousel.","hint": "bagagem",   "answer": "baggage" },
+        { "before": "This is the",  "after": ".",                  "hint": "roda-gigante","answer": "ferris wheel" }
+      ],
+      "writing": {
+        "model": "It's + [cor].",
+        "example": { "en": "It's black.", "pt": "É preto." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "roda-gigante", "options": ["ferris wheel", "carousel", "roller coaster", "sea lion"], "answer": "ferris wheel" },
+          { "prompt": "flamingo",     "options": ["flamingo", "sea lion", "zoo", "suitcase"],                "answer": "flamingo" },
+          { "prompt": "preto",        "options": ["black", "blue", "red", "pink"],                           "answer": "black" },
+          { "prompt": "adesivo",      "options": ["sticker", "baggage", "suitcase", "zoo"],                  "answer": "sticker" }
+        ]
+      }
+    }
+  ]
+}
