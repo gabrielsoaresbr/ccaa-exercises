@@ -1,0 +1,178 @@
+{
+  "week": 6,
+  "theme": "Lesson 1 — At Home",
+  "themePt": "Em casa (Livro 2)",
+  "themeEmoji": "🛂",
+
+  "vocabulary": [
+    { "en": "passport",          "pt": "passaporte" },
+    { "en": "handbag",           "pt": "bolsa (handbag / bag)" },
+    { "en": "trip",              "pt": "viagem" },
+    { "en": "Brazil",            "pt": "Brasil" },
+    { "en": "Canada",            "pt": "Canadá" },
+    { "en": "the United States", "pt": "Estados Unidos" },
+    { "en": "Brazilian",         "pt": "brasileiro(a)" },
+    { "en": "Canadian",          "pt": "canadense" },
+    { "en": "American",          "pt": "americano(a)" }
+  ],
+
+  "verbs": [
+    { "en": "to be → am / is / are", "pt": "ser ou estar" }
+  ],
+
+  "dialogue_context_only": [
+    { "name": "Mrs. Hall", "en": "Jill, are you all set for the trip?",          "pt": "Jill, você está pronta para a viagem?" },
+    { "name": "Jill",      "en": "No, I'm not.",                                 "pt": "Não, não estou." },
+    { "name": "Mrs. Hall", "en": "Get a move on, dear.",                         "pt": "Anda logo, querida." },
+    { "name": "Jill",      "en": "OK, Mom.",                                     "pt": "Está bem, mãe." },
+    { "name": "Jill",      "en": "Here I am.",                                   "pt": "Aqui estou." },
+    { "name": "Jill",      "en": "Is this my passport?",                         "pt": "Este é o meu passaporte?" },
+    { "name": "Mrs. Hall", "en": "Yes, it is.",                                  "pt": "Sim, é." },
+    { "name": "Mrs. Hall", "en": "Put your passport in my handbag, please.",     "pt": "Coloque seu passaporte na minha bolsa, por favor." },
+    { "name": "Jill",      "en": "All right.",                                   "pt": "Está bem." },
+    { "name": "Girl",      "en": "Are you Brazilian?",                           "pt": "Você é brasileiro?" },
+    { "name": "Boy",       "en": "Yes, I am.",                                   "pt": "Sim, eu sou." }
+  ],
+
+  "days": [
+    {
+      "day": 1,
+      "weekday": "Segunda-feira",
+      "generated": true,
+      "copyWords": ["passport", "handbag", "trip", "Brazil", "Brazilian"],
+      "complete": [
+        { "before": "I'm",                     "after": ".", "hint": "brasileiro(a)", "answer": "Brazilian" },
+        { "before": "Is this my",              "after": "?", "hint": "passaporte",    "answer": "passport" },
+        { "before": "Are you all set for the", "after": "?", "hint": "viagem",        "answer": "trip" },
+        { "before": "I'm from",                "after": ".", "hint": "Brasil",        "answer": "Brazil" },
+        { "before": "Put your passport in my", "after": ".", "hint": "bolsa",         "answer": "handbag" },
+        { "before": "Are you",                 "after": "?", "hint": "canadense",     "answer": "Canadian" }
+      ],
+      "writing": {
+        "model": "I'm + [nacionalidade].",
+        "example": { "en": "I'm American.", "pt": "Eu sou americano." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "passaporte",    "options": ["passport", "handbag", "trip", "Brazil"],          "answer": "passport" },
+          { "prompt": "brasileiro(a)", "options": ["Brazilian", "Canadian", "American", "passport"],  "answer": "Brazilian" },
+          { "prompt": "viagem",        "options": ["trip", "passport", "handbag", "Canada"],           "answer": "trip" },
+          { "prompt": "bolsa",         "options": ["handbag", "passport", "trip", "Brazilian"],        "answer": "handbag" }
+        ]
+      }
+    },
+
+    {
+      "day": 2,
+      "weekday": "Terça-feira",
+      "generated": true,
+      "copyWords": ["passport", "handbag", "Canada", "Canadian", "trip"],
+      "complete": [
+        { "before": "Are you",   "after": "?",               "hint": "brasileiro(a)", "answer": "Brazilian" },
+        { "before": "I'm from",  "after": ".",               "hint": "Canadá",        "answer": "Canada" },
+        { "before": "Your",      "after": "is in my handbag.","hint": "passaporte",    "answer": "passport" },
+        { "before": "I'm",       "after": ".",               "hint": "canadense",     "answer": "Canadian" },
+        { "before": "Is this my","after": "?",               "hint": "bolsa",         "answer": "handbag" },
+        { "before": "This is my","after": ".",               "hint": "passaporte",    "answer": "passport" }
+      ],
+      "writing": {
+        "model": "I'm from + [país].",
+        "example": { "en": "I'm from Brazil.", "pt": "Eu sou do Brasil." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "canadense",  "options": ["Canadian", "Brazilian", "American", "handbag"],        "answer": "Canadian" },
+          { "prompt": "Canadá",     "options": ["Canada", "Brazil", "the United States", "passport"],   "answer": "Canada" },
+          { "prompt": "passaporte", "options": ["passport", "handbag", "trip", "Canadian"],             "answer": "passport" },
+          { "prompt": "Brasil",     "options": ["Brazil", "Canada", "the United States", "trip"],       "answer": "Brazil" }
+        ]
+      }
+    },
+
+    {
+      "day": 3,
+      "weekday": "Quarta-feira",
+      "generated": true,
+      "copyWords": ["passport", "trip", "the United States", "American", "handbag"],
+      "complete": [
+        { "before": "I'm",         "after": ".", "hint": "americano(a)",   "answer": "American" },
+        { "before": "I'm from",    "after": ".", "hint": "Estados Unidos", "answer": "the United States" },
+        { "before": "Are you",     "after": "?", "hint": "americano(a)",   "answer": "American" },
+        { "before": "Is this your","after": "?", "hint": "passaporte",     "answer": "passport" },
+        { "before": "This is your","after": ".", "hint": "bolsa",          "answer": "handbag" },
+        { "before": "I'm all set for the", "after": ".", "hint": "viagem", "answer": "trip" }
+      ],
+      "writing": {
+        "model": "Is this my + [objeto]?",
+        "example": { "en": "Is this my passport?", "pt": "Este é o meu passaporte?" }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "americano(a)",   "options": ["American", "Brazilian", "Canadian", "trip"],            "answer": "American" },
+          { "prompt": "Estados Unidos", "options": ["the United States", "Canada", "Brazil", "handbag"],     "answer": "the United States" },
+          { "prompt": "viagem",         "options": ["trip", "passport", "handbag", "American"],              "answer": "trip" },
+          { "prompt": "passaporte",     "options": ["passport", "handbag", "trip", "Canada"],                "answer": "passport" }
+        ]
+      }
+    },
+
+    {
+      "day": 4,
+      "weekday": "Quinta-feira",
+      "generated": true,
+      "copyWords": ["handbag", "passport", "Brazil", "Brazilian", "Canada"],
+      "complete": [
+        { "before": "No, I'm not", "after": ".", "hint": "americano(a)",   "answer": "American" },
+        { "before": "This is my",  "after": ".", "hint": "bolsa",          "answer": "handbag" },
+        { "before": "Are you from","after": "?", "hint": "Brasil",         "answer": "Brazil" },
+        { "before": "Yes, I'm",    "after": ".", "hint": "brasileiro(a)",  "answer": "Brazilian" },
+        { "before": "Yes, I'm all set for the", "after": ".", "hint": "viagem", "answer": "trip" },
+        { "before": "Are you from","after": "?", "hint": "Canadá",         "answer": "Canada" }
+      ],
+      "writing": {
+        "model": "Put your passport in my + [objeto].",
+        "example": { "en": "Put your passport in my handbag.", "pt": "Coloque seu passaporte na minha bolsa." }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "Brasil",        "options": ["Brazil", "Canada", "the United States", "passport"], "answer": "Brazil" },
+          { "prompt": "brasileiro(a)", "options": ["Brazilian", "Canadian", "American", "handbag"],      "answer": "Brazilian" },
+          { "prompt": "Canadá",        "options": ["Canada", "Brazil", "the United States", "trip"],     "answer": "Canada" },
+          { "prompt": "bolsa",         "options": ["handbag", "passport", "trip", "Canadian"],           "answer": "handbag" }
+        ]
+      }
+    },
+
+    {
+      "day": 5,
+      "weekday": "Sexta-feira",
+      "generated": true,
+      "copyWords": ["passport", "trip", "Canadian", "American", "the United States"],
+      "complete": [
+        { "before": "No, I'm not", "after": ".", "hint": "canadense",      "answer": "Canadian" },
+        { "before": "Are you from","after": "?", "hint": "Estados Unidos", "answer": "the United States" },
+        { "before": "This is your","after": ".", "hint": "passaporte",     "answer": "passport" },
+        { "before": "Yes, I'm",    "after": ".", "hint": "americano(a)",   "answer": "American" },
+        { "before": "OK, Mom. I'm all set for the", "after": ".", "hint": "viagem", "answer": "trip" },
+        { "before": "No, I'm not", "after": ".", "hint": "brasileiro(a)",  "answer": "Brazilian" }
+      ],
+      "writing": {
+        "model": "Are you + [nacionalidade]?",
+        "example": { "en": "Are you Brazilian?", "pt": "Você é brasileiro?" }
+      },
+      "activity": {
+        "type": "multiple_choice",
+        "items": [
+          { "prompt": "canadense",      "options": ["Canadian", "Brazilian", "American", "passport"],        "answer": "Canadian" },
+          { "prompt": "americano(a)",   "options": ["American", "Canadian", "Brazilian", "handbag"],         "answer": "American" },
+          { "prompt": "Estados Unidos", "options": ["the United States", "Brazil", "Canada", "trip"],        "answer": "the United States" },
+          { "prompt": "passaporte",     "options": ["passport", "handbag", "trip", "Brazilian"],             "answer": "passport" }
+        ]
+      }
+    }
+  ]
+}
